@@ -4,7 +4,7 @@ A responsive and visually appealing portfolio website showcasing my skills, proj
 
 ## 🔗 Live Demo
 
-“This portfolio is deployed using GitHub Pages and can be accessed at:" 
+This portfolio is deployed using GitHub Pages and can be accessed at: 
 https://syedaummekulsum07.github.io/personal_portfolio/
 
 ## 🧰 Technologies Used
