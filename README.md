@@ -33,5 +33,5 @@ Navigate to the project folder
 
 📄 License
 
-This project is open source and available under the MIT License
- (or your preferred license).
+This project is licensed under the **MIT** License.
+See the license details [here](LICENSE) .
