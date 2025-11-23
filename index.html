@@ -1,143 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syeda Umme Kulsum | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-      <div class="logo">Kulsum.dev</div>
-      <ul>
+<head>
+  <meta charset="UTF-8" />
+  <title>Syeda Umme Kulsum | MERN Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">Syeda Umme Kulsum</div>
+
+      <button class="burger" id="burger" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </aside>
+    </nav>
+  </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="hero">
-        <div class="hero-left">
-          <h1>I’m <span>Syeda Umme Kulsum</span></h1>
-          <p>
-            MERN Stack Developer passionate about building secure & scalable
-            apps.
-          </p>
-          <a href="#projects" class="btn">See My Projects</a>
-        </div>
-        <div class="hero-right">
-          <img src="image.jpg" alt="Profile" />
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a full-stack developer specialized in MERN stack. My expertise
-          lies in crafting high-performance APIs, user-friendly UIs, and
-          scalable architectures. I love transforming ideas into real-world
-          digital products.
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">MERN Stack Developer</p>
+        <h1 class="hero-title">Syeda Umme Kulsum</h1>
+        <p class="hero-subtitle">
+          Building scalable APIs, secure backends, and responsive dashboards using
+          JavaScript, Node.js, Express.js, MongoDB, and React.
         </p>
-        <div class="skills">
-          <h3>Skills</h3>
-          <div class="skill-tags">
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>ExpressJS</span>
-            <span>NodeJS</span>
-            <span>MongoDB</span>
-            <span>Git & GitHub</span>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <!-- <a href="#resume" class="btn outline">View Resume</a> -->
+        </div>
+
+        <div class="hero-meta">
+          <span>Shimoga, India</span>
+          <span>•</span>
+          <a href="mailto:syedaummekulsum9@gmail.com">syedaummekulsum9@gmail.com</a>
+          <span>•</span>
+          <a href="tel:+919353608562">+91-9353608562</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <h2 class="section-title">About</h2>
+      <p class="section-text">
+        MERN stack developer with strong fundamentals in JavaScript and hands-on
+        experience building RESTful APIs, role-based dashboards, and data-driven
+        applications using Node.js, Express.js, MongoDB, and React.
+      </p>
+      <p class="section-text">
+        Comfortable working across the stack, from database schema design and
+        authentication to front-end components and responsive UI.
+      </p>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section section-alt" id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="grid skills-grid">
+        <article class="card">
+          <h3>Programming</h3>
+          <p>JavaScript</p>
+        </article>
+
+        <article class="card">
+          <h3>Frameworks & Libraries</h3>
+          <p>ReactJS (Basic), ExpressJS, Mongoose</p>
+        </article>
+
+        <article class="card">
+          <h3>Runtime & Tools</h3>
+          <p>NodeJS, Git, Bitbucket, GitHub, VS Code, Render</p>
+        </article>
+
+        <article class="card">
+          <h3>Database & Modules</h3>
+          <p>MongoDB, express, mongoose</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <article class="card project">
+        <header class="project-header">
+          <h3>Clinic Management System</h3>
+          <p class="project-stack">
+            Node.js • Express.js • MongoDB • Handlebars.js • HTML • CSS • Bootstrap
+          </p>
+        </header>
+        <ul class="project-list">
+          <li>
+            Built RESTful APIs for appointments, billing, authentication, and patient records to support scalable clinic operations.
+          </li>
+          <li>
+            Optimized MongoDB schemas and queries for high concurrency and improved response times.
+          </li>
+          <li>
+            Implemented JWT-based role access and responsive dashboards for admins, doctors, and receptionists.
+          </li>
+          <li>
+            Added scheduling, billing, and PDF invoice modules to streamline daily workflows.
+          </li>
+        </ul>
+        <a
+          href="https://github.com/syedaummekulsum07/clinic_management"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link"
+        >
+          GitHub Repository
+        </a>
+      </article>
+
+      <article class="card project">
+        <header class="project-header">
+          <h3>Competitive Monitoring Web App</h3>
+          <p class="project-stack">
+            Node.js • Express.js • MongoDB • HTML • CSS • JavaScript
+          </p>
+        </header>
+        <ul class="project-list">
+          <li>
+            Developed a web app for automated competitor tracking with efficient data processing and storage.
+          </li>
+          <li>
+            Integrated RSS feeds to deliver near real-time competitive insights with accurate data.
+          </li>
+          <li>
+            Built a responsive dashboard UI to visualize metrics and improve navigation.
+          </li>
+          <li>
+            Implemented auto-tagging and optimized APIs to speed up analysis and reduce latency.
+          </li>
+        </ul>
+        <a
+          href="https://github.com/syedaummekulsum07/Competitive-monitoring"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link"
+        >
+          GitHub Repository
+        </a>
+      </article>
+    </section>
+
+    <!-- ========== EDUCATION & CERTIFICATIONS ========== -->
+    <section class="section section-alt" id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Master of Science (MSc) in Mathematics</h3>
+          <p class="timeline-meta">
+            Kuvempu University • CGPA: 8.79 • 12/2022 – 11/2024
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Bachelor of Science (BSc)</h3>
+          <p class="timeline-meta">
+            Kuvempu University • 90.75% • 06/2019 – 10/2022
+          </p>
+        </article>
+      </div>
+
+      <h2 class="section-title section-title-sub">Certifications</h2>
+      <ul class="cert-list">
+        <li>JavaScript Course – Simplilearn – 2025</li>
+        <li>NodeJS Course – Simplilearn – 2025</li>
+        <li>Front-end Development (HTML5, CSS3, ReactJS) – Simplilearn – 2025</li>
+      </ul>
+    </section>
+
+    <!-- ========== RESUME ========== -->
+    <section class="section" id="resume">
+      <h2 class="section-title">Resume</h2>
+
+      <div class="resume-actions">
+        <a
+          href="resume.pdf"
+          target="_blank"
+          class="btn outline"
+        >
+          View Resume (PDF)
+        </a>
+        <a
+          href="resume.pdf"
+          download="Syeda_Umme_Kulsum_Resume.pdf"
+          class="btn primary"
+        >
+          Download Resume
+        </a>
+      </div>
+
+      <!-- <div class="resume-frame-wrapper"> -->
+        <!-- Make sure the file name matches your actual PDF file -->
+        <!-- <iframe
+          src="esume.pdf"
+          title="Resume - Syeda Umme Kulsum"
+          class="resume-frame"
+        ></iframe> -->
+      <!-- </div> -->
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section-alt" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p><strong>Location:</strong> Shimoga, India</p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+919353608562">+91-9353608562</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:syedaummekulsum9@gmail.com">
+              syedaummekulsum9@gmail.com
+            </a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/syedaummekulsum07" target="_blank">
+              github.com/syedaummekulsum07
+            </a>
+          </p>
+          <!-- Replace # with real links when ready -->
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/syeda-umme-kulsum-422775346" target="_blank">LinkedIn</a>
+          </p>
+          <!-- <p>
+            <strong>Portfolio:</strong>
+            <a href="#" target="_blank">Add Portfolio URL</a>
+          </p> -->
+        </div>
+
+        <!-- <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input id="name" type="text" required />
           </div>
-        </div>
-      </section>
 
-      <!-- Projects Section -->
-      <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Clinic Management System</h3>
-            <p>
-              A robust web app for managing appointments, billing, patient data,
-              and generating invoices. Includes JWT auth, dashboards, and
-              real-time API integration.
-            </p>
-            <a
-              href="https://github.com/GANESHSN20/clinic_management_system.git"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </article>
-          <!-- <article class="card">
-            <h3>E-commerce Store</h3>
-            <p>
-              MERN-based online store with authentication, cart, admin
-              dashboard, and Stripe payment integration.
-            </p>
-            <a href="#">View on GitHub</a>
-          </article> -->
-        </div>
-      </section>
-
-      <!-- Education Section (Timeline style) -->
-      <section class="education" id="education">
-        <h2>Education</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>MSc in Mathematics</h3>
-            <p>Kuvempu University | CGPA: 8.79 | 2022 - 2024</p>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input id="email" type="email" required />
           </div>
-          <div class="timeline-item">
-            <h3>BSc in Mathematics</h3>
-            <p>Kuvempu University | 90.75% | 2019 - 2022</p>
+
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" rows="4" required></textarea>
           </div>
-        </div>
-      </section>
 
-      <!-- Resume Section -->
-      <section class="resume" id="resume">
-        <h2>Resume</h2>
-        <p>Download my resume here:</p>
-        <div class="viewDown">
-          <a href="resume.pdf" class="btn" target="_blank"
-            >📄 View</a
-          >
-          <a href="resume.pdf" class="btn" download
-            >⬇ Download</a
-          >
-        </div>
-      </section>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="formMessage" class="form-message"></p>
+        </form> -->
+      </div>
+    </section>
+  </main>
 
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Let’s connect for projects, collaborations, or opportunities.</p>
-        <div class="contact-links">
-          <!-- <a href="mailto:syedaummekulsum9@gmail.com">📧 Email</a> -->
-           <a href="https://mail.google.com/mail/?view=cm&to=syedaummekulsum9@gmail.com" target="_blank">📧 Email</a>
-          <a href="https://github.com/syedaummekulsum07" target="_blank"
-            >🐙 GitHub</a
-          >
-          <a
-            href="https://www.linkedin.com/in/syeda-umme-kulsum-422775346"
-            target="_blank"
-            >💼 LinkedIn</a
-          >
-        </div>
-      </section>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>
+      © <span id="year"></span> Syeda Umme Kulsum. All rights reserved.
+    </p>
+  </footer>
 
-      <footer>
-        <p>© 2025 Syeda Umme Kulsum | Portfolio</p>
-      </footer>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>

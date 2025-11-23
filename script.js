@@ -1,20 +1,32 @@
-// Scroll spy for sidebar highlight
-window.addEventListener("scroll", () => {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".sidebar a");
+// Mobile nav toggle
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("navLinks");
 
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 100;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
+burger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
 
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
+// Close nav on link click (mobile)
+navLinks.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
   });
+});
+
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Contact form demo (front-end only)
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  formMessage.textContent = "Thank you! Your message has been recorded locally.";
+  formMessage.style.color = "#22c55e";
+  contactForm.reset();
+
+  setTimeout(() => {
+    formMessage.textContent = "";
+  }, 4000);
 });
